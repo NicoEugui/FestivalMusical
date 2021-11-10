@@ -1,0 +1,14 @@
+{
+  "name": "festivalmusical",
+  "version": "1.0.0",
+  "description": "Aprendiendo SASS y Gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nicolas Eugui",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}
