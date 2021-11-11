@@ -11,6 +11,10 @@ const cache = require('gulp-cache');
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 
+// JS
+
+const terser = require('gulp-terser-js');
+
 function css(done) {
     src('src/scss/**/*.scss') // Identificar el archivo .scss a compilar
         .pipe(sourcemaps.init())
@@ -45,6 +49,7 @@ function versionWebp (done) {
 
 function javascript(done) {
     src('src/js/**/*.js')
+        .pipe(terser())
         .pipe(dest('build/js'));
     done()
 }
