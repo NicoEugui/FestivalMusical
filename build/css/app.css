@@ -428,3 +428,47 @@ h3 {
 .navegacion-principal a:hover {
   color: #FEF46D;
 }
+
+.video {
+  position: relative;
+  min-height: 70rem;
+  max-height: 70rem;
+  overflow: hidden;
+}
+.video .overlay {
+  position: absolute;
+  background: #9500ff;
+  background: linear-gradient(270deg, rgba(149, 0, 255, 0.4816053512) 0%, rgba(255, 0, 110, 0.397993311) 100%);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.video video {
+  width: auto;
+  display: block;
+}
+@media (min-width: 992px) {
+  .video video {
+    width: 100%;
+  }
+}
+
+.contenido-video {
+  z-index: 10;
+}
+.contenido-video h2 {
+  color: #FFFFFF;
+  font-size: 7rem;
+  margin: 0;
+}
+.contenido-video p {
+  background-color: #F53756;
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin: 0;
+}
